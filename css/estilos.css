@@ -1,38 +1,83 @@
+* { /* reset do css */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  background-image: url(http://img.ibxk.com.br/ns/rexposta/2017/10/28/28094232935022.jpg?watermark=neaki&w=600);
-  background-size: auto 100vh;
-  font-family: Arial;
-  height: 100vh;
+    background-image: url(http://img.ibxk.com.br/ns/rexposta/2017/10/28/28094232935022.jpg?watermark=neaki&w=600);
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 100vh;
+    font-size: 14px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* breakpoint */
+@media (min-width: 700px) {
+    body {
+        font-size: 19px;
+    }
+}
+
+header {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
 }
 
 .menu {
-  background-color: whitesmoke;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0; /* só funciona com position */
+    width: 100vw;
 }
 
 .menu ul {
-  display: flex;
-  justify-content: space-around; /* só funciona com display: flex */
+    display: flex;
+    justify-content: space-around; /* só funciona com display: flex */
 }
 
 .menu li { /* seletor hierárquico */
-  list-style: none;
+    list-style: none;
+}
+
+.menu a {
+    display: block; /* permitir que ele receba o padding, pq por padrão ele é inline */
+    padding: 10px 30px;
 }
 
 a {
-  color: purple;
-  text-decoration: none;
+    color: purple;
+    text-decoration: none;
 }
 
 a:hover { /* classe com pseudo-classe */
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-.site-subtitle, 
+.site-subtitle,
 .site-title {
-  color: whitesmoke;
-  text-align: center;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 3em; /* 3 vezes o tamanho da font do body */
 }
 
 .site-subtitle {
-  font-style: italic;
+    font-style: italic;
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 180px;
 }
