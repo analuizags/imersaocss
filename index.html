@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gloria+Hallelujah&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
     <title>Ana Luiza</title>
 </head>
 <body>
-    <header>
+    <header id="sobre">
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div>
-            <h1 class="site-title">Ana Luiza</h1>
-            <h2 class="site-subtitle">jr. front-end developer</h2>
+            <div class="titulo">
+                <h1 class="site-title">Ana Luiza</h1>
+                <h2 class="site-subtitle">sr. procrastinadora</h2>
+            </div>
+            <p class="sobre">
+                Lorem ipsum nullam platea faucibus eros tincidunt semper hendrerit cras, 
+                nulla sapien bibendum erat nostra malesuada ultrices pharetra sapien faucibus, 
+                placerat risus diam eu condimentum non dictum lacinia. rutrum viverra porta 
+                platea etiam viverra cubilia faucibus aptent leo, turpis auctor lectus bibendum 
+                sit sagittis vivamus praesent, urna magna amet suspendisse ligula morbi id feugiat.
+            </p>
         </div>
     </header>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2>Portfólio</h2>
 
         <div class="grid">
@@ -46,7 +56,25 @@
                 <figcaption>Projetos pessoais 2</figcaption>
             </figure>
         </div>
-
     </section>
+
+    <footer id="contato">
+        <div class="grid icons">
+            <a target="_blank" href="https://github.com/analuizags">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/analuiza">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="http://instagram.com/analu.gs">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a target="_blank" href="mailto:ana.souza@estudante.ifgoiano.edu.br">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <p class="caption">&copy; 2020 - nalugs. Não feito por uma designer.</p>
+    </footer>
 </body>
 </html>
