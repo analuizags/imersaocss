@@ -4,57 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gloria+Hallelujah&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pacifico&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script> -->
     <title>Ana Luiza</title>
 </head>
 <body>
     <header id="sobre">
         <nav class="menu">
-            <ul>
+            <ul class="container">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div>
+        
+        <div class="container">
             <div class="titulo">
-                <h1 class="site-title">Ana Luiza</h1>
-                <h2 class="site-subtitle">sr. procrastinadora</h2>
+                <figure class="avatar">
+                    <img src="https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2015/08/21/mona-lisaistock.jpg" alt="Ana Luiza">
+                </figure>
+                <div>
+                    <h1 class="site-title">Ana Luiza</h1>
+                    <h2 class="site-subtitle">sr. procrastinadora</h2>
+                </div>
             </div>
-            <p class="sobre">
-                Lorem ipsum nullam platea faucibus eros tincidunt semper hendrerit cras, 
-                nulla sapien bibendum erat nostra malesuada ultrices pharetra sapien faucibus, 
-                placerat risus diam eu condimentum non dictum lacinia. rutrum viverra porta 
-                platea etiam viverra cubilia faucibus aptent leo, turpis auctor lectus bibendum 
-                sit sagittis vivamus praesent, urna magna amet suspendisse ligula morbi id feugiat.
-            </p>
+            <div class="sobre">
+                <p>
+                    Lorem ipsum nullam platea faucibus eros tincidunt semper hendrerit cras, 
+                    nulla sapien bibendum erat nostra malesuada ultrices pharetra sapien faucibus, 
+                    placerat risus diam eu condimentum non dictum lacinia. rutrum viverra porta 
+                    platea etiam viverra cubilia faucibus aptent leo, turpis auctor lectus bibendum 
+                    sit sagittis vivamus praesent, urna magna amet suspendisse ligula morbi id feugiat.
+                </p>
+            </div>
         </div>
     </header>
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio container" id="portfolio">
         <h2>Portfólio</h2>
-
         <div class="grid">
-            <figure>
-                <img class="img-portfolio" src="https://blog.ideiamais.com.br/wp-content/uploads/2019/03/processo-ecommerce-750x410.jpg" alt="eCommerce">
-                <figcaption>eCommerce</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="https://www.fortaleza.ce.gov.br/images/images1/112019/fortaleza-em-mapas.jpg" alt="Mobile">
-                <figcaption>Mobile</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="http://www.santuccidesign.com.br/wp-content/uploads/2017/12/chamda-webdesign.jpg" alt="Web design">
-                <figcaption>Web design</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="https://www.comshalom.org/wp-content/uploads/2017/12/glenn-carstens-peters-190592.jpg" alt="Projetos pessoais">
-                <figcaption>Projetos pessoais</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="https://www.comshalom.org/wp-content/uploads/2017/12/glenn-carstens-peters-190592.jpg" alt="Projetos pessoais">
-                <figcaption>Projetos pessoais 2</figcaption>
-            </figure>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="https://blog.ideiamais.com.br/wp-content/uploads/2019/03/processo-ecommerce-750x410.jpg" alt="eCommerce">
+                    </figure>
+                    <div class="card-back">
+                        <h3>eCommerce</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure>
+                        <img class="img-portfolio" src="https://www.fortaleza.ce.gov.br/images/images1/112019/fortaleza-em-mapas.jpg" alt="Mobile">
+                    </figure>
+                    <div class="card-back">
+                        <h3>Mobile</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card">
+                <div class="card">
+                    <figure>
+                        <img class="img-portfolio" src="http://www.santuccidesign.com.br/wp-content/uploads/2017/12/chamda-webdesign.jpg" alt="Web design">
+                    </figure>
+                    <div class="card-back">
+                        <h3>Web design</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure>
+                        <img class="img-portfolio" src="https://www.comshalom.org/wp-content/uploads/2017/12/glenn-carstens-peters-190592.jpg" alt="Projetos pessoais">
+                    </figure>
+                    <div class="card-back">
+                        <h3>Projetos pessoais</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure>
+                        <img class="img-portfolio" src="https://www.comshalom.org/wp-content/uploads/2017/12/glenn-carstens-peters-190592.jpg" alt="Projetos pessoais">
+                    </figure>
+                    <div class="card-back">
+                        <h3>Projetos pessoais 2</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -63,7 +105,7 @@
             <a target="_blank" href="https://github.com/analuizags">
                 <i class="fab fa-github"></i>
             </a>
-            <a target="_blank" href="https://twitter.com/analuiza">
+            <a target="_blank" href="https://twitter.com/gs_analuiza">
                 <i class="fab fa-twitter"></i>
             </a>
             <a target="_blank" href="http://instagram.com/analu.gs">
